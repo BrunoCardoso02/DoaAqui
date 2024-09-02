@@ -8,11 +8,9 @@ const port = process.env.PORT;
 app.use(express.json());
 
 app.get('/', (req: Request, res: Response) => {
-    res.send('Olá Doa Aqui!')
+	res.send('Olá Doa Aqui!');
 });
 
-
-
 app.listen(port, () => {
-    console.log(`Project running on port ${port}`)
-})
+	console.log(`Project running on port ${port}`);
+});
